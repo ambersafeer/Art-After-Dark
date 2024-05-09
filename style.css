@@ -350,6 +350,112 @@ label{
 	text-align: center;
 }
 
+#map-div {
+width: 900px;
+height: 500px;
+border: solid #bababa 1px;
+border-radius: 5px;
+}
+
+
+#map-legend{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	margin-bottom: 10px;
+	margin-left: 10px;
+	border-radius: 3px;
+	padding: 5px 10px;
+	box-shadow: 0 0 0 2px rgb(0 0 0 / 20%);
+	background: #FFFFFF;
+	width: 120px;
+	height: 150px;
+}
+
+#map-legend p{
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-size: 1rem;
+	font-weight: 100;
+}
+#map-legend p, i{
+	display: inline;
+	line-height: 2.0;
+}
+#map-legend i{
+	font-size:20px;
+/*	color: #7A4C4C;*/
+/*	display: inline;*/
+}
+
+#map-legend h4{
+	font-family: "Chelsea Market", serif;
+	color: #313F5D;
+	font-size: 1.5rem;
+/*	line-height: 0.1;*/
+	text-align: center;
+	margin: 0.2px 0px 0px 0px;
+	font-weight: 100;
+}
+
+#map-legend hr{
+	height: 1px;
+	margin:0.2px 0px 0.7px 0px;
+}
+
+#artworks{
+	color: #E4A951;
+}
+
+#workshops{
+	color: #91AECF;
+}
+
+#extras{
+	color: #313F5D;
+}
+
+#hope{
+	text-align: center;
+}
+
+.about-container{
+	display:grid;
+	grid-template-columns: auto auto;
+	gap: 10px;
+}
+
+#entry img{
+	width: 400px;
+	border-radius: 5px;
+}
+
+.winner-profile{
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+}
+
+.page-nav {
+	width: fit-content;
+	text-align: center;
+	background: #E4A951;
+	margin: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 5px;
+	color: #10151F;
+	
+	
+}
+.page-nav a{
+	text-decoration: none;
+}
+.page-nav a:hover {
+	color:#f6fff8;
+	text-decoration: none;
+			
+}
+
 .footer{
 	font-family: "Chelsea Market", serif;
 	background: #313F5D;

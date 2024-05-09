@@ -8,6 +8,10 @@
 	<link rel="stylesheet" href="https://use.typekit.net/xus6hgl.css">
 	<link rel="icon" type="image/x-icon" href="logo2.svg">
 	<script src="https://kit.fontawesome.com/37fcc6882c.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="leaflet/leaflet.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
 </head>
 
 <body>
@@ -34,14 +38,67 @@
 			<li>People tend to be more available in the evenings, and we would love to see more faces there!</li>
 			<li>The darkness of the night allows us to display the films on a large outdoor projector screen.</li>
 			<li>Parties are just better at night!</li>
-		
-		
-		
 		</ol>
-		<p></p>
+		
+		<h3>Interested in attending? Take a look at our map to see all the events taking place!</h3>
+		<p><em>Click on a shape to view its event and location.</em></p>
+		
+		<section class="map-display">
+		<div id="map-div">
+		<div id="map-legend">
+		<h4>Legend</h4>
+			<hr>
+			<div>
+			<i class="fa-solid fa-square" id="artworks"></i> <p>Artworks</p>
+			</div>
+			
+			<div>
+			<i class="fa-solid fa-square" id="workshops"></i> <p>Workshops</p>
+			</div>
+			
+			<div>
+			<i class="fa-solid fa-square" id="extras"></i> <p>Extras</p>
+			</div>
+		</div>
+		</div>
+		
+	</section>
+		<h2>Further Details</h2>
+	<div class="about-container">
+		<div>
+		<h3>Entry</h3>
+		<p>In order to make sure that we have sufficient supplies and food for everyone, we ask that attendees sign in and wear the given wrist band to help us identify who is part of the event and who is just passing by. Signing in will also have you entered into a raffle to win some big prizes each night!</p>
+		<h3>Workshops</h3>
+		<p>Workshops hosted by our talented staff, guest artists, and even judges will be taking place throughout the festival. Additionally, you can choose to be a part of a happening, or a piece of performance art, right here at the event!</p>
+		<h3>Live Music</h3>
+		<p>To help kick us off, we will be having New Brunswick-based bands and singers performing in Vorhees Mall. If you or anyone you know has hearing sensitivities, earplugs are available upon request (but we recommend that you bring your own headphones, if necessary). Additionally, once the films start rolling, the music will go on an intermission.</p>
+		
+		<h3>Announcements</h3>
+		<p>The center of Vorhees Mall will be where all of the festival's important announcements will be taking place, including workshop times, raffle winners, and competition results!</p>
+		<p>Food and drinks will be provided throughout the night, although there are many restaurants around as well (at the Yard, George Street, Easton Avenue, etc.) if you wish to find something else! Bathrooms are also available in every building surrounding the event.</p>
+		</div>
+		
+		<div id="entry">
+		<img src="map-gallery/entry.jpg">
+		</div>
+		
+		
+		
+		
+	</div>
+		<div id="hope">
+		<h1>We hope to see you there!</h1>
+		</div>
+		
+		
+		
 	</div>
 	<footer class="footer">
-			 <p> &copy; 2024 by Art After Dark. All rights reserved. </p> <!-- permissions statement, terms of use, social media menu, secondary site nav menu, etc. -->
-		  </footer>
+		<p> &copy; 2024 by Art After Dark. All rights reserved. </p> <!-- permissions statement, terms of use, social media menu, secondary site nav menu, etc. -->
+	</footer>
+	
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/leaflet.js"></script>
+<script src="js/about.js"></script>
 </body>
 </html>
