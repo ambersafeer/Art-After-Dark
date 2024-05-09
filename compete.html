@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Art After Dark - Compete</title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="icon" type="image/x-icon" href="SVG/logo.svg">
+	<link rel="stylesheet" href="https://use.typekit.net/xus6hgl.css">
+	<link rel="icon" type="image/x-icon" href="logo2.svg">
+	<script src="https://kit.fontawesome.com/37fcc6882c.js" crossorigin="anonymous"></script>
+</head>
+	<header class="site-header">
+		<nav class="site-nav-flex">
+			<a class="site-logo" href="index.html">
+		   	<img class="site-logo-image" src="logo2.svg" alt="Art After Dark">
+			</a>
+	<a href="index.html">Home</a>
+	<a href="about.html">About</a>
+	<a href="compete.html">Compete</a>
+	<a href="gallery.html">Gallery</a>
+	<a href="contact.html">Contact</a>
+		</nav>
+	</header>
+	
+	<div class="wrapper">
+		<h1>COMPETITIONS ARE NOW OPEN FOR 2024!</h1>
+		<div class="compete-open">
+			<div>
+				<h3>Are you a current high school or college student artist based in New Jersey? Apply now to compete and be featured at the 5th annual Art After Dark festival!</h3>
+				<p>Art After Dark recognizes NJ-based students for outstanding artistic achievement. This competition amplifies young voices, provides a platform for artists, and provides them with the resources needed to succeed in their future careers.</p>
+			</div>
+			<div>
+				<img src="rr.jpg" id="rr">
+				<p><em>A group of winners at the 2023 Art After Dark festival.</em></p>
+			</div>
+		</div>
+		
+		
+		
+		
+		<div class="entry">
+			<p>Entry Deadline: <strong>July 1st, 2024</strong></p>
+			<p id="demo"></p>
+			<a href="#"><h3>APPLY HERE!</h3></a>
+		</div>
+		
+		<h2>About the Application</h2>
+		<p>Art After Dark hosts competitions within four artistic disciplines: Digital Art, Film, Illustration, and Mixed Media. As the festival expands and we gain more support, we hope to incorporate more categories and prizes for winners. Currently, we partner with the Zimmerli Art Museum to help bring student art to the public eye after the festival concludes.</p>
+		<p>Each artist may submit up to 3 artworks per category, but note that each artist may only be chosen as a winner once to help bring support to other artists. The application requests that you provide your name, contact information, high quality photos of your artwork, its name, and a description relating to your artistic process and inspiration for the piece.</p>
+		
+		<h2>Awards and Benefits</h2>
+		<div class="awards">
+			<ul>
+				<li><strong>Museum Exhibition</strong></li>
+				<p>All winners of the competition will be able to showcase their winning artowrks in a collective exhibition at the Zimmerli Art Museum.</p>
+				<li><strong>Cash Prizes</strong></li>
+				<p>Winners will receive monetary awards ranging from $100 to $500.</p>
+				<li><strong>Public Display</strong></li>
+				<p>All entries (winners or not) will be displayed at the Art After Dark festival, given that the artist is able to attend and bring their artwork.</p>
+				<li><strong>Network of Support</strong></li>
+				<p>All participating artists will be given access to like-minded peers, professionals in their field, and developmental workshops to hone their skills.</p>
+				<li><strong>Future Scholarships</strong></li>
+				<p>Winning artists will be given access to apply for scholarships to help with collegiate funding.</p>
+
+			</ul>
+
+			<div>
+				<img src="moma.jpg">
+				<p><em>Art After Dark sponsored trip to the MOMA.</em></p>
+			</div>
+		</div>
+
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("July 1, 2024 00:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+		
+	</div>
+<footer class="footer">
+			 <p> &copy; 2024 by Art After Dark. All rights reserved. </p> <!-- permissions statement, terms of use, social media menu, secondary site nav menu, etc. -->
+		  </footer>
+<body>
+</body>
+</html>

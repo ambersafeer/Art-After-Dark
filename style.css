@@ -5,7 +5,7 @@
 
 body{
 	background-color:#F2F7FF;
-	color:#1B1110;
+	color:#10151F;
 
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 	font-weight: 100;
@@ -18,6 +18,15 @@ body{
 	margin: 0;
 	padding: 0;
 	/* borders, spacing*/
+}
+
+a{
+	color: #10151F;
+	transition: color 0.3s;
+}
+
+a:hover{
+	color: #E4A951;
 }
 
 .wrapper {
@@ -55,15 +64,15 @@ body{
 
 .site-nav-flex a{
 /*	color:#4D5061;*/
-	color: #FFFFFF;
+	color: #91AECF;
 	text-decoration: none;
+	transition: color 0.3s;
 
 }
 
 .site-nav-flex a:hover{
-	color: #1B1110;
+	color: #FFFFFF;
 	border: 0px;
-	text-decoration: underline;
 }
 
 .site-logo-image{
@@ -150,7 +159,7 @@ body{
 	color: #E4A951;
 	border-radius:20px;
 	padding: 0px 20px;
-	align-text: center;
+	text-align: center;
 }
 
 
@@ -172,12 +181,183 @@ body{
 
 .showcase-item p{
 	font-size: 1rem;
+	color: #91AECF;
+	text-align: center;
 }
 
 .showcase-item a{
-	color: #FFDFDA;
+	color: #E4A951;
+	text-decoration: none;
+
 }
 
 .showcase-item a:hover{
-	color: #1B1110;
+	color:white;
+}
+
+.showcase-item i{
+	font-size: 50px;
+	transition: transform 0.5s;
+}
+
+.showcase-item i:hover{
+	color:white;
+	transform: scale(1.5);
+}
+
+.sky-container{
+	text-align: center;
+}
+
+.sky-container img{
+	width: 100%;
+	margin:auto;
+}
+
+.history-text{
+	width: 50px;
+	text-align: center;
+	line-height: 1.5;
+	position: absolute;
+  	top: 70%; 
+  	left: 20%; 
+  	transform: translate(-50%, -50%); 
+/*  	color: #4a4e69; */
+  	padding: 20px 20px; 
+  	font-size: 2.5rem; 
+	font-family: "Chelsea Market", sans-serif;
+	
+}
+
+.winner-container{
+	display: grid;
+	grid-template-columns: 500px auto;
+	gap: 30px;
+}
+
+.winner-image img{
+	width: 500px;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #91AECF;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #668EBC;
+}
+
+.contact {
+  border-radius: 5px;
+/*  background-color: #91AECF;*/
+  padding: 20px;
+}
+
+#fname, #lname{
+	width: 30%;
+}
+
+#message{
+	width: 100%;
+/*	padding: 50px;*/
+	margin: 8px 0px;
+	height: 150px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: none;
+	padding: 12px 20px;
+	font-family: Arial, "sans-serif";
+}
+
+label{
+	display: block;
+}
+
+.contact-container{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 10px;
+}
+
+.social{
+	font-size: 2.5rem;
+	padding: 0px 5px;
+	color: #E4A951;
+}
+
+.social:hover{
+	color: #EEC993;
+}
+
+.social-media{
+	text-align: center;
+		
+}
+
+#demo{
+	font-family: "Chelsea Market", "sans-serif";
+	background: #91AECF;
+	border-radius: 20px;
+	width: 200px;
+	padding: 5px;
+	text-align: center;
+	display: block;
+ 	 margin-left: auto;
+ 	 margin-right: auto;
+}
+
+.compete-open{
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 20px;
+}
+
+.awards{
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 20px;
+}
+
+.awards img{
+	width: 500px;
+	border-radius: 20px;
+}
+#rr{
+	border-radius: 20px;
+}
+
+.entry{
+	font-size: 2rem;
+	text-align: center;
+}
+
+.footer{
+	font-family: "Chelsea Market", serif;
+	background: #313F5D;
+	text-align: center;
+	width: 100%;
+	padding-top:3px;
+	padding-bottom: 3px;
+	left: 0;
+  	bottom: 0;
+	color: #91AECF;
 }
